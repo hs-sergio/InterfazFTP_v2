@@ -4,34 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f7ce2c8-d9e1-437b-91f9-8cf9d73a6c9d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/interfazftp_v2/ControllerFTP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/interfazftp_v2/Main_FTP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/interfazftp_v2/GUI_FTP.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/interfazftp_v2/img/folder.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/interfazftp_v2/img/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/interfazftp_v2/img/pdf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/interfazftp_v2/img/txt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/interfazftp_v2/img/unknown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/interfazftp_v2/img/video.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/interfazftp_v2/img/videoO (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/interfazftp_v2/img/videoO (2).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/interfazftp_v2/img/videoO (3).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/interfazftp_v2/img/videoO (4).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/interfazftp_v2/img/videoO (5).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/interfazftp_v2/img/videoO.png" afterDir="false" />
+    <list default="true" id="3f7ce2c8-d9e1-437b-91f9-8cf9d73a6c9d" name="Changes" comment="Interfaz básica de cliente FTP.&#10;Puedes subir archivos al directorio remoto borrar del local y del remoto y visualizarlos.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/interfazftp_v2/ControllerFTP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/interfazftp_v2/ControllerFTP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/interfazftp_v2/GUI_FTP.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/interfazftp_v2/GUI_FTP.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,8 +89,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1677083326998</updated>
-      <workItem from="1677083328219" duration="10495000" />
+      <workItem from="1677083328219" duration="12086000" />
     </task>
+    <task id="LOCAL-00001" summary="Interfaz básica de cliente FTP.&#10;Puedes subir archivos al directorio remoto borrar del local y del remoto y visualizarlos.">
+      <created>1677094954856</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677094954856</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,5 +106,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Interfaz básica de cliente FTP.&#10;Puedes subir archivos al directorio remoto borrar del local y del remoto y visualizarlos." />
+    <option name="LAST_COMMIT_MESSAGE" value="Interfaz básica de cliente FTP.&#10;Puedes subir archivos al directorio remoto borrar del local y del remoto y visualizarlos." />
   </component>
 </project>

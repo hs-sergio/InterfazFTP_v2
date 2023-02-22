@@ -8,10 +8,7 @@ import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
-import java.io.BufferedInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
+import java.io.*;
 import java.util.Optional;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -46,6 +43,8 @@ public class ControllerFTP implements Initializable {
     private Button btnDeleteRemoteFile;
     @FXML
     private Button btnDeleteLocalFile;
+    @FXML
+    private Button btnDownloadRemote;
 
     // create a alert
     Alert alert = new Alert(Alert.AlertType.NONE);
@@ -106,6 +105,17 @@ public class ControllerFTP implements Initializable {
             }
         });
 
+        btnDownloadRemote.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    downloadRemoteFilesToLocal();
+                } catch (IOException ioe) {
+                    ioe.printStackTrace();
+                }
+            }
+        });
+
 
 
     }
@@ -156,6 +166,31 @@ public class ControllerFTP implements Initializable {
 
 
             getRemoteFilesAndFill();
+        }
+    }
+
+    public void downloadRemoteFilesToLocal() throws IOException {
+        alert.setAlertType(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("CONFIRMACIÓN DESCARGA DE ARCHIVO");
+        alert.setContentText("Estas seguro que quieres descargar el archivo seleccionado del directorio remoto?");
+        Optional<ButtonType> action = alert.showAndWait();
+
+        if(action.get() == ButtonType.OK){
+            String archivo = "";
+            TreeItem<String> item = (TreeItem<String>) TreeViewRemote.getSelectionModel().getSelectedItem();
+            if (item != null) {
+                System.out.println(item.getValue());
+                archivo = item.getValue();
+                System.out.println(archivo);
+
+                OutputStream out = new FileOutputStream(localPath+"/"+archivo);
+                if(cliente.retrieveFile(archivo, out)){
+                    System.out.println("ARCHIVO DESCARGADO CORRECTAMENTE");
+                }else{
+                    System.out.println("NO SE HA DESCARGADO EL ARCHIVO");
+                }
+            }
+
         }
     }
 
